@@ -45,9 +45,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Full Stack Moview Reviews Application"
-              description="A movie review web app built with Java, Spring Boot, MongoDB, and React. Users can browse a dynamic movie database, watch trailers, and leave reviews. Features a clean frontend UI, RESTful backend, and seamless user interaction. Designed to demonstrate full-stack integration and database handling with real-time review functionality."
-              ghLink="https://github.com/atharvabiyani/Movie-Review-Application-Java-SpringBoot-MongoDB-React"             
+              title="AI Database Optimization Assistant"
+              description="AI-powered SQL assistant built with Python, Flask, Snowflake, and HuggingFace. Users can generate SQL queries from plain English, explain legacy queries, and receive schema optimization tips. Features a clean frontend UI, vector-based retrieval, and seamless natural language interaction. Designed to showcase database analysis, LLM integration, and real-time optimization for enterprise systems."
+              ghLink="https://github.com/atharvabiyani/AI-Database-Optimizer"             
             />
           </Col>
         </Row>
