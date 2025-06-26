@@ -4,13 +4,15 @@ function App() {
   return (
     <div className="bg-white min-h-screen font-inter text-gray-900">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200 shadow-sm flex items-center justify-between px-6 py-4">
-  <div>
-    <span className="font-space-grotesk text-2xl font-bold">Atharva Biyani</span>
-    <span className="ml-3 text-sm text-gray-500">Software Engineer 👨🏽‍💻</span>
-  </div>
-  <div className="text-sm text-gray-600">Austin, TX 🏙️</div>
-</header>
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200 shadow-sm px-4 py-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full">
+          <div className="text-center sm:text-left">
+            <div className="font-space-grotesk text-2xl font-bold">Atharva Biyani</div>
+            <div className="text-sm text-gray-500">Software Engineer 👨🏽‍💻</div>
+          </div>
+          <div className="text-sm text-gray-600 mt-2 sm:mt-0 text-center sm:text-right">Austin, TX 🏙️</div>
+        </div>
+      </header>
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4">
@@ -24,11 +26,19 @@ function App() {
           />
           <h1 className="text-3xl md:text-5xl font-bold mb-2">Atharva Biyani</h1>
           <h2 className="text-lg md:text-2xl text-gray-600 mb-4">Software Engineer at Oracle in Austin, TX</h2>
-          <div className="mt-4 flex gap-x-4">
-            <a href="https://www.linkedin.com/in/atharva-biyani/" className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">LinkedIn</a>
-            <a href="https://github.com/atharvabiyani" className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">GitHub</a>
-            <a href="https://medium.com/@atharvabiyani" className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">Medium Articles</a>
-            <a href="mailto:atharvabiyani@gmail.com" className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">Email</a>
+          <div className="mt-4 flex flex-wrap justify-center gap-3">
+            <a href="https://www.linkedin.com/in/atharva-biyani/" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+              LinkedIn
+            </a>
+            <a href="https://github.com/atharvabiyani" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+              GitHub
+            </a>
+            <a href="https://medium.com/@atharvabiyani" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+              Medium Articles
+            </a>
+            <a href="mailto:atharvabiyani@gmail.com" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+              Email
+            </a>
           </div>
         </section>
 
