@@ -1,6 +1,11 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "Atharva's Portfolio";
+  }, []);
+
   return (
     <div className="bg-white min-h-screen font-inter text-gray-900">
       {/* Header */}
@@ -27,16 +32,16 @@ function App() {
           <h1 className="text-3xl md:text-5xl font-bold mb-2">Atharva Biyani</h1>
           <h2 className="text-lg md:text-2xl text-gray-600 mb-4">Software Engineer at Oracle in Austin, TX</h2>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <a href="https://www.linkedin.com/in/atharva-biyani/" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+            <a href="https://www.linkedin.com/in/atharva-biyani/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
               LinkedIn
             </a>
-            <a href="https://github.com/atharvabiyani" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+            <a href="https://github.com/atharvabiyani" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
               GitHub
             </a>
-            <a href="https://medium.com/@atharvabiyani" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+            <a href="https://medium.com/@atharvabiyani" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
               Medium Articles
             </a>
-            <a href="mailto:atharvabiyani@gmail.com" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
+            <a href="mailto:atharvabiyani@gmail.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm md:text-base bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition w-full sm:w-auto text-center">
               Email
             </a>
           </div>
@@ -71,7 +76,7 @@ function App() {
 
   {/* Hobbies Paragraph */}
   <p className="mb-6 text-gray-700">
-    When I’m not debugging a container issue or writing Terraform scripts, you’ll probably find me chasing after my golden retriever, Rio. I’m also a huge pickleball enthusiast on the weekends. And yes, I believe tacos are a religion in Austin. Whether it's a mid-day reward or a post-deploy ritual, you’ll find me hunting down the best tacos in town.
+    When I’m not debugging a container issue or writing Terraform scripts, you’ll probably find me chasing after my golden retriever, Rio. I’m also a huge pickleball enthusiast on the weekends. And yes, I believe tacos are a religion in Austin. Whether it's a mid-day reward or a post-workout meal, you’ll find me hunting down the best tacos in town.
   </p>
 
   {/* Hobby Images */}
@@ -177,7 +182,7 @@ function App() {
                 <span className="bg-gray-100 px-2 py-0.5 rounded text-xs">Axios</span>
                 <span className="bg-gray-100 px-2 py-0.5 rounded text-xs">HTML/CSS</span>
               </div>
-              <a href="https://github.com/atharvabiyani/Movie-Review-Application-Java-SpringBoot-MongoDB-React" className="text-primary-600 hover:underline mt-auto">GitHub</a>
+              <a href="https://github.com/atharvabiyani/Movie-Review-Application-Java-SpringBoot-MongoDB-React" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline mt-auto">GitHub</a>
             </div>
             <div className="bg-white rounded-lg shadow p-4 border flex flex-col">
               <div className="font-semibold mb-2">NBA Highlights Classifier</div>
@@ -191,7 +196,7 @@ function App() {
                 <span className="bg-gray-100 px-2 py-0.5 rounded text-xs">Selenium</span>
                 <span className="bg-gray-100 px-2 py-0.5 rounded text-xs">Pandas</span>
               </div>
-              <a href="https://github.com/atharvabiyani/Machine-Learning-Basketball-Highlight-Classifier-Model-Python" className="text-primary-600 hover:underline mt-auto">GitHub</a>
+              <a href="https://github.com/atharvabiyani/Machine-Learning-Basketball-Highlight-Classifier-Model-Python" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline mt-auto">GitHub</a>
             </div>
             <div className="bg-white rounded-lg shadow p-4 border flex flex-col">
               <div className="font-semibold mb-2">Resume Matching System</div>
@@ -205,7 +210,7 @@ function App() {
                 <span className="bg-gray-100 px-2 py-0.5 rounded text-xs">NumPy</span>
                 <span className="bg-gray-100 px-2 py-0.5 rounded text-xs">Google Colab</span>
               </div>
-              <a href="https://github.com/atharvabiyani/Resume-Job-Matching-System" className="text-primary-600 hover:underline mt-auto">GitHub</a>
+              <a href="https://github.com/atharvabiyani/Resume-Job-Matching-System" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline mt-auto">GitHub</a>
             </div>
           </div>
         </section>
@@ -217,17 +222,17 @@ function App() {
             <div className="bg-white rounded-lg shadow p-4 border flex flex-col">
               <div className="font-semibold mb-2">Stargate: The Future of AI Infrastructure</div>
               <div className="text-gray-600 mb-2">Wrote an article analyzing Stargate, a global AI supercluster initiative led by Oracle, NVIDIA, and OpenAI. Covered its technical components including GPU scaling, RDMA networking, and renewable energy usage as well as its strategic impact on AI accessibility, infrastructure sustainability, and global deployment.</div>
-              <a href="https://medium.com/@atharvabiyani/how-stargate-superclusters-reflect-a-bigger-shift-in-ai-infrastructure-d238cefce75e" className="text-primary-600 hover:underline mt-auto">Read More</a>
+              <a href="https://medium.com/@atharvabiyani/how-stargate-superclusters-reflect-a-bigger-shift-in-ai-infrastructure-d238cefce75e" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline mt-auto">Read More</a>
             </div>
             <div className="bg-white rounded-lg shadow p-4 border flex flex-col">
               <div className="font-semibold mb-2">Smart Cities Powered by Azure</div>
               <div className="text-gray-600 mb-2">Wrote an article exploring how Microsoft Azure enables smart city transformation through IoT and Edge Computing. Covered real-time traffic optimization, environmental monitoring, and public safety use cases. Highlighted tools like Azure IoT Hub, Digital Twins, and AI services, along with global examples from Barcelona, Singapore, and NYC.</div>
-              <a href="https://medium.com/@atharvabiyani/microsoft-azure-for-smart-cities-iot-and-edge-computing-in-action-35fb4914b195" className="text-primary-600 hover:underline mt-auto">Read More</a>
+              <a href="https://medium.com/@atharvabiyani/microsoft-azure-for-smart-cities-iot-and-edge-computing-in-action-35fb4914b195" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline mt-auto">Read More</a>
             </div>
             <div className="bg-white rounded-lg shadow p-4 border flex flex-col">
               <div className="font-semibold mb-2">The Power of Networking in Tech Careers</div>
               <div className="text-gray-600 mb-2">Wrote an article on the importance of networking in today’s job market, highlighting strategies for building authentic relationships both online and in person. Covered how LinkedIn, job fairs, and referrals can boost visibility and job prospects, along with personal insights on securing interviews through direct outreach.</div>
-              <a href="https://medium.com/@atharvabiyani/the-power-of-networking-why-its-crucial-in-today-s-competitive-job-market-f5be9d95cf35" className="text-primary-600 hover:underline mt-auto">Read More</a>
+              <a href="https://medium.com/@atharvabiyani/the-power-of-networking-why-its-crucial-in-today-s-competitive-job-market-f5be9d95cf35" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline mt-auto">Read More</a>
             </div>
           </div>
         </section>
@@ -237,10 +242,10 @@ function App() {
       <footer className="mt-16 py-8 border-t border-gray-200 text-center text-sm text-gray-500">
         <div className="mb-2">Atharva Biyani</div>
         <div className="flex justify-center gap-4">
-          <a href="https://www.linkedin.com/in/atharva-biyani/" aria-label="LinkedIn" className="hover:text-blue-600">LinkedIn</a>
-          <a href="https://github.com/atharvabiyani" aria-label="GitHub" className="hover:text-gray-800">GitHub</a>
-          <a href="https://medium.com/@atharvabiyani" aria-label="Medium Articles" className="hover:text-gray-800">Medium Articles</a>
-          <a href="mailto:atharvabiyani@gmail.com" aria-label="Email" className="hover:text-red-500">Email</a>
+          <a href="https://www.linkedin.com/in/atharva-biyani/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">LinkedIn</a>
+          <a href="https://github.com/atharvabiyani" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800">GitHub</a>
+          <a href="https://medium.com/@atharvabiyani" aria-label="Medium Articles" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800">Medium Articles</a>
+          <a href="mailto:atharvabiyani@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">Email</a>
         </div>
       </footer>
     </div>
